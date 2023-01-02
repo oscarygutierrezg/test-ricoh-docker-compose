@@ -1,4 +1,4 @@
-# test-tul-docker-compose
+# test-ricoh-docker-compose
 ```
 - Debe tener instalado docker y corriendo
 - Verificar que en maquina local no este corriendo nada en puertos 8080 y 80
