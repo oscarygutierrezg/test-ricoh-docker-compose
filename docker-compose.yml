@@ -1,0 +1,19 @@
+version: '3'
+services:
+  backend:
+    image:  "oscarygutierrezg/test-ricoh-backend"
+    ports:
+      - "8080:8080"
+    networks:
+      - network-ricoh
+  frontend:
+    image: "frontend"
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - network-ricoh
+networks:
+  network-ricoh:
+    driver: bridge
